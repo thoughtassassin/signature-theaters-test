@@ -12,6 +12,19 @@ const Header = () => (
         <Link href="/about">
           <a style={linkStyle}>About</a>
         </Link>
+        <style jsx>{`
+      h1, a {
+        font-family: "Arial";
+      }
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+
+      a:hover {
+        opacity: 0.6;
+      }
+    `}</style>
     </div>
 )
 

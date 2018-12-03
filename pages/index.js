@@ -6,17 +6,6 @@ const PostLink = (props) => (
     <Link href={`/post?title=${props.title}`}>
       <a>{props.title}</a>
     </Link>
-  </li>
-)
-
-export default () => (
-  <Layout>
-    <h1>My Blog</h1>
-    <ul>
-      <PostLink title="Hello Next.js"/>
-      <PostLink title="Learn Next.js is awesome"/>
-      <PostLink title="Deploy apps with Zeit"/>
-    </ul>
     <style jsx>{`
       h1, a {
         font-family: "Arial";
@@ -38,6 +27,22 @@ export default () => (
 
       a:hover {
         opacity: 0.6;
+      }
+    `}</style>
+  </li>
+)
+
+export default () => (
+  <Layout>
+    <h1>My Blog</h1>
+    <ul>
+      <PostLink title="Hello Next.js"/>
+      <PostLink title="Learn Next.js is awesome"/>
+      <PostLink title="Deploy apps with Zeit"/>
+    </ul>
+    <style jsx>{`
+      h1 {
+        font-family: "Arial";
       }
     `}</style>
   </Layout>
