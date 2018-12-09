@@ -3,7 +3,9 @@ import Header from '../components/Header'
 import Service from '../components/Service'
 import Experience from '../components/Experience'
 import Products from '../components/Products'
-import '../stylesheets/styles.scss'
+import Contact from '../components/Contact'
+import '../stylesheets/bootstrap.css'
+import '../stylesheets/styles.css'
 
 const Index = () => (
   <div>
@@ -23,7 +25,7 @@ const Index = () => (
     <Service />
     <Experience />
     <Products />
-    <section className="contact" id="contact" />
+    <Contact />
   </div>
 );
 

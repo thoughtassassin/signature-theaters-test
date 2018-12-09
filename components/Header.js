@@ -34,9 +34,9 @@ const Header = () => (
             </AnchorLink>
           </li>
           <li>
-            <a href="#contact" target="_self">
+            <AnchorLink href="#contact" target="_self">
               Contact us
-            </a>
+            </AnchorLink>
           </li>
         </ul>
       </nav>
