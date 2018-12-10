@@ -573,5 +573,12 @@ p {
         background-size: cover;
         background-attachment: fixed;
     }
+    .contact-info {
+        display: flex;
+        align-items: baseline;
+    }
+    .contact-info div {
+        flex: 1;
+    }
 }
 
