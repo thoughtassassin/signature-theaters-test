@@ -425,7 +425,7 @@ h2 {
 }
 
 .phone {
-    font-size: 48px;
+    font-size: 35px;
     color: #CCC;
     display: inline-block;
 }
@@ -444,11 +444,26 @@ h1 {
 }
 
 #contact h1 {
+    font-size: 40px;
     margin: 60px 0 0;
+    letter-spacing: 7px;
 }
 
 #contact h2 {
     margin-top: 20px;
+}
+
+@media (min-width: 422px) {
+    #contact h1 {
+        margin: 60px 0 0;
+    }
+    
+    #contact h2 {
+        margin-top: 20px;
+    }
+    .phone {
+        font-size: 48px;
+    }  
 }
 
 @media (min-width: 768px) {
