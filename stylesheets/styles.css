@@ -102,6 +102,7 @@ header .navbar li a:focus {
 .navbar-inverse .navbar-toggle,
 .navbar-inverse .navbar-toggle:focus {
     background-color: #000;
+    outline: none;
 }
 
 .navbar-inverse .navbar-toggle:focus,
