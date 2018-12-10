@@ -84,6 +84,10 @@ header .navbar ul {
 header .navbar a {
     text-decoration: none;
 }
+
+header .navbar a:focus {
+    outline: 1px dotted #FFF;
+}
 .navbar-toggle {
     border-color: #000;
 }
@@ -100,6 +104,7 @@ header .navbar li a:focus {
     background-color: #000;
 }
 
+.navbar-inverse .navbar-toggle:focus,
 header .navbar .navbar-toggle.open {
  box-shadow: 2px 2px 10px rgba(255,198,39,0.5),
     -2px -2px 10px rgba(255,198,39,0.5),
