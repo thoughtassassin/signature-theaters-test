@@ -488,6 +488,11 @@ p {
         margin-top: 0;
     }
 
+    .contact-info {
+        margin: 1.5rem 0;
+        overflow: auto;
+    }
+
     .vertical-align {
         display: flex;
         flex-direction: row;
@@ -576,6 +581,7 @@ p {
     .contact-info {
         display: flex;
         align-items: baseline;
+        margin: 0.7rem 0 3rem;
     }
     .contact-info div {
         flex: 1;
