@@ -8,7 +8,7 @@ class Header extends Component {
   handleClick = () => {
     this.setState (state => ({open: !state.open}));
   };
-  handleLogoClick = () => {
+  handleCloseClick = () => {
     this.setState ({open: false});
   };
   render () {
@@ -17,37 +17,36 @@ class Header extends Component {
       <header>
         <nav className="navbar navbar-inverse" role="navigation">
           <div className="navbar-logo">
-            <AnchorLink onClick={this.handleLogoClick} href="#__next">
+            <AnchorLink onClick={this.handleCloseClick} href="#__next">
               <img
                 src="/static/signature-theaters-logo.png"
                 alt="Signature Theaters logo"
               />
             </AnchorLink>
           </div>
-          <a onClick={this.handleClick} className="navbar-toggle">
+          <a onClick={this.handleClick} tabIndex="0" className={open ? "navbar-toggle open" : "navbar-toggle"}>
             <span className="icon-bar" />
             <span className="icon-bar" />
             <span className="icon-bar" />
           </a>
           <ul className={open ? 'nav navbar-nav new-class' : 'nav navbar-nav'}>
-            <span className="icon-bar" />
             <li>
-              <AnchorLink onClick={this.handleClick} href="#service">
+              <AnchorLink onClick={this.handleCloseClick} href="#service">
                 Service
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink onClick={this.handleClick} href="#experience">
+              <AnchorLink onClick={this.handleCloseClick} href="#experience">
                 Experience
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink onClick={this.handleClick} href="#products">
+              <AnchorLink onClick={this.handleCloseClick} href="#products">
                 Products
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink onClick={this.handleClick} href="#contact">
+              <AnchorLink onClick={this.handleCloseClick} href="#contact">
                 Contact us
               </AnchorLink>
             </li>
