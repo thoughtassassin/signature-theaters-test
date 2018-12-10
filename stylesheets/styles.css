@@ -580,5 +580,8 @@ p {
     .contact-info div {
         flex: 1;
     }
+    .vertical-align {
+        margin: 5rem 0;
+    }
 }
 
