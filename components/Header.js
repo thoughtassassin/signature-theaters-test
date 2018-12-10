@@ -8,13 +8,16 @@ class Header extends Component {
   handleClick = () => {
     this.setState (state => ({open: !state.open}));
   };
+  handleLogoClick = () => {
+    this.setState ({open: false});
+  };
   render () {
     const {open} = this.state;
     return (
       <header>
         <nav className="navbar navbar-inverse" role="navigation">
           <div className="navbar-logo">
-            <AnchorLink href="#__next">
+            <AnchorLink onClick={this.handleLogoClick} href="#__next">
               <img
                 src="/static/signature-theaters-logo.png"
                 alt="Signature Theaters logo"
@@ -29,22 +32,22 @@ class Header extends Component {
           <ul className={open ? 'nav navbar-nav new-class' : 'nav navbar-nav'}>
             <span className="icon-bar" />
             <li>
-              <AnchorLink href="#service">
+              <AnchorLink onClick={this.handleClick} href="#service">
                 Service
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink href="#experience" target="_self">
+              <AnchorLink onClick={this.handleClick} href="#experience">
                 Experience
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink href="#products" target="_self">
+              <AnchorLink onClick={this.handleClick} href="#products">
                 Products
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink href="#contact" target="_self">
+              <AnchorLink onClick={this.handleClick} href="#contact">
                 Contact us
               </AnchorLink>
             </li>
