@@ -19,16 +19,17 @@ class Header extends Component {
           <div className="navbar-logo">
             <AnchorLink onClick={this.handleCloseClick} href="#__next">
               <img
-                src="/static/signature-theaters-logo.png"
+                id="logo"
+                src="/static/signature-theaters-logo.svg"
                 alt="Signature Theaters logo"
               />
             </AnchorLink>
           </div>
-          <a onClick={this.handleClick} tabIndex="0" className={open ? "navbar-toggle open" : "navbar-toggle"}>
+          <button onClick={this.handleClick} tabIndex="0" className={open ? "navbar-toggle open" : "navbar-toggle"}>
             <span className="icon-bar" />
             <span className="icon-bar" />
             <span className="icon-bar" />
-          </a>
+          </button>
           <ul className={open ? 'nav navbar-nav new-class' : 'nav navbar-nav'}>
             <li>
               <AnchorLink onClick={this.handleCloseClick} href="#service">
