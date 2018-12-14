@@ -20,6 +20,7 @@ const Index = () => (
         href="https://fonts.googleapis.com/css?family=Play"
         rel="stylesheet"
       />
+      <script src='https://www.google.com/recaptcha/api.js?render=6Lcdd4EUAAAAAHBWMAYgcS2KxkXt4_cc_1e6yIDa'/>
     </Head>
     <Header />
     <Service />

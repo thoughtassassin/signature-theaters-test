@@ -5,40 +5,61 @@ class Contact extends React.Component {
     name: {
       value: '',
       validation: null,
-      errorMessage: 'Name is required.'
+      errorMessage: 'Name is required.',
     },
     email: {
       value: '',
       validation: emailValidation,
-      errorMessage: 'Email must be a valid email.'
+      errorMessage: 'Email must be a valid email.',
     },
     comment: {
       value: '',
       validation: null,
-      errorMessage: 'Comment is required.'
+      errorMessage: 'Comment is required.',
     },
-    errors: []
+    errors: [],
   };
 
   handleChange = ({target: {name, value}}) => {
-    const { [name] : element } = this.state;
+    const {[name]: element} = this.state;
     this.setState ({
-      [name] : {...element, value}
+      [name]: {...element, value},
     });
-  }
-    
+  };
+
   handleSubmit = e => {
-    e.preventDefault();
-    this.setState({errors: []})
+    e.preventDefault ();
+    let errorCount = 0;
+    this.setState ({errors: []});
     for (const field in this.state) {
       if (field != 'errors') {
         const {validation, value, errorMessage} = this.state[field];
-        if (!value || validation && !validation.test(value)) {
+        if (!value || (validation && !validation.test (value))) {
+          errorCount++;
           this.setState(state => ({errors: [...state.errors, errorMessage]}));
         }
-      } 
+      }
     }
-  }
+    if (errorCount === 0) {
+      if (grecaptcha) {
+        grecaptcha.ready(() =>
+          grecaptcha
+            .execute('6Lcdd4EUAAAAAHBWMAYgcS2KxkXt4_cc_1e6yIDa')
+            .then(token => {
+              fetch('/validate', {
+                method: 'post',
+                headers: {
+                  'Content-Type': 'application/json; charset=utf-8',
+                },
+                body: JSON.stringify ({token}),
+              })
+                .then (response => { if (response.ok) { return response.json() } })
+                .then (validation => console.log (validation));
+            })
+        );
+      }
+    }
+  };
 
   render () {
     const {name, email, comment} = this.state;
@@ -108,7 +129,6 @@ class Contact extends React.Component {
               </form>
             </div>
           </div>
-          {JSON.stringify(this.state.errors)}
         </div>
       </section>
     );
