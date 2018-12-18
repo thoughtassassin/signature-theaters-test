@@ -5,18 +5,21 @@ const initialState = {
     validation: null,
     errorMessage: 'Name is required.',
     error: false,
+    ref: 'nameRef'
   },
   email: {
     value: '',
     validation: emailValidation,
     errorMessage: 'Email must be a valid email.',
     error: false,
+    ref: 'emailRef'
   },
   comment: {
     value: '',
     validation: null,
     errorMessage: 'Comment is required.',
     error: false,
+    ref: 'commentRef'
   },
   errors: [],
   messageSent: false,
@@ -24,6 +27,10 @@ const initialState = {
 
 class Contact extends React.Component {
   state = initialState;
+
+  nameRef = React.createRef();
+  emailRef = React.createRef();
+  commentRef = React.createRef();
 
   handleChange = ({target: {name, value}}) => {
     const {[name]: element} = this.state;
@@ -42,8 +49,12 @@ class Contact extends React.Component {
     this.setState ({errors: []});
     for (const field in this.state) {
       if (field !== 'errors' && field !== 'messageSent') {
-        const {validation, value, errorMessage} = this.state[field];
+        const {validation, value, errorMessage, ref} = this.state[field];
         if (!value || (validation && !validation.test (value))) {
+          if (errorCount === 0) {
+            console.log(this[ref].current)
+            this[ref].current.focus();
+          }
           errorCount++;
           this.setState (state => ({
             [field]: {...state[field], error: true},
@@ -73,7 +84,6 @@ class Contact extends React.Component {
                         'Content-Type': 'application/json; charset=utf-8',
                       },
                       body: JSON.stringify ({
-                        to: 'utpbart@yahoo.com',
                         name: this.state.name.value,
                         from: this.state.email.value,
                         comment: this.state.comment.value,
@@ -117,7 +127,7 @@ class Contact extends React.Component {
               <h2>Send An Email</h2>
               {messageSent &&
                 <div className="alert alert-success" role="alert">
-                  Message sent!
+                  <span class="message">Message sent!</span>
                   <button
                     type="button"
                     className="close"
@@ -139,6 +149,7 @@ class Contact extends React.Component {
                     pattern={name.valiation}
                     onChange={this.handleChange}
                     required
+                    ref={this.nameRef}
                   />
                   {name.error &&
                     <div className="error-message"> {name.errorMessage}</div>}
@@ -156,6 +167,7 @@ class Contact extends React.Component {
                     pattern={email.valiation}
                     onChange={this.handleChange}
                     required
+                    ref={this.emailRef}
                   />
                   {email.error &&
                     <div className="error-message"> {email.errorMessage}</div>}
@@ -176,6 +188,7 @@ class Contact extends React.Component {
                     onChange={this.handleChange}
                     required
                     rows="7"
+                    ref={this.commentRef}
                   />
                   {comment.error &&
                     <div className="error-message">

@@ -24,6 +24,7 @@ app
       var data = {
         from: `${req.body.name} <${req.body.from}>`,
         to: 'christopher@signaturetheaters.com',
+        //to: 'david@thoughtassassin.com',
         subject: 'Comment from website',
         text: req.body.comment
       };
