@@ -4,6 +4,7 @@ import Service from '../components/Service'
 import Experience from '../components/Experience'
 import Products from '../components/Products'
 import Contact from '../components/Contact'
+import Background from '../components/Background'
 import '../stylesheets/bootstrap.css'
 import '../stylesheets/styles.css'
 
@@ -22,6 +23,7 @@ const Index = () => (
       />
       <script src='https://www.google.com/recaptcha/api.js?render=6Lcdd4EUAAAAAHBWMAYgcS2KxkXt4_cc_1e6yIDa'/>
     </Head>
+    <Background />
     <Header />
     <Service />
     <Experience />
