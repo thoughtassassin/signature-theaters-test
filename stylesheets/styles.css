@@ -270,6 +270,27 @@ h2 {
     padding: 3px 12px;
 }
 
+.form-group.error input,
+.form-group.error textarea {
+    box-shadow: 2px 2px 10px #CE0E2D,
+    -2px -2px 10px #CE0E2D,
+    -2px 2px 10px #CE0E2D,
+    2px -2px 10px #CE0E2D;
+}
+
+.form-group.error label {
+    text-shadow: 2px 2px 10px #CE0E2D,
+    -2px -2px 10px #CE0E2D,
+    -2px 2px 10px #CE0E2D,
+    2px -2px 10px #CE0E2D;
+}
+
+.error-message {
+    font-size: 18px;
+    color: #FFC629;
+    margin-top: 2px;
+}
+
 @-webkit-keyframes animate-left {
     0% {
         -webkit-transform: translate3d(-100%, 0, 0);
