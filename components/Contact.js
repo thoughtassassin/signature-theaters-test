@@ -116,11 +116,11 @@ class Contact extends React.Component {
             <div className="col-xs-12 email">
               <h2>Send An Email</h2>
               {messageSent &&
-                <div class="alert alert-success" role="alert">
+                <div className="alert alert-success" role="alert">
                   Message sent!
                   <button
                     type="button"
-                    class="close"
+                    className="close"
                     onClick={this.closeAlert}
                     aria-label="Close"
                   >
