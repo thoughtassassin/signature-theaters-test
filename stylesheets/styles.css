@@ -241,10 +241,10 @@ h2 {
     -1px -1px 1px #000,
     -1px 1px 1px #000,
     1px -1px 1px #000;
-    box-shadow: 2px 2px 10px #FFC629,
-    -2px -2px 10px #FFC629,
-    -2px 2px 10px #FFC629,
-    2px -2px 10px #FFC629;
+    box-shadow: 2px 2px 2px #FFC629,
+    -2px -2px 2px #FFC629,
+    -2px 2px 2px #FFC629,
+    2px -2px 2px #FFC629;
     position: relative;
 }
 
@@ -272,6 +272,7 @@ h2 {
 
 .form-group.error input,
 .form-group.error textarea {
+    border: 1px solid #CE0E2D;
     box-shadow: 2px 2px 10px #CE0E2D,
     -2px -2px 10px #CE0E2D,
     -2px 2px 10px #CE0E2D,
@@ -285,10 +286,50 @@ h2 {
     2px -2px 10px #CE0E2D;
 }
 
+.alert-success {
+    font-size: 18px;
+    line-height: 22px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 2rem;
+    background: #28a745!important;
+    color: #FFF;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.alert-success span.message {
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5),
+    -2px -2px 2px rgba(0,0,0,0.5),
+    -2px 2px 2px rgba(0,0,0,0.5),
+    2px -2px 2px rgba(0,0,0,0.5);
+}
+
+.alert-success button,
+.alert-success button:hover {
+    color: #FFF;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5rem;
+    opacity: 0.6;
+    padding-bottom: 3px;
+    line-height: 14px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5),
+    -2px -2px 2px rgba(0,0,0,0.5),
+    -2px 2px 2px rgba(0,0,0,0.5),
+    2px -2px 2px rgba(0,0,0,0.5);
+}
+
 .error-message {
     font-size: 18px;
-    color: #FFC629;
-    margin-top: 2px;
+    background: #CE0E2D;
+    color: #FFF;
+    padding: 0 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 700;
+    display: inline-block;
 }
 
 @-webkit-keyframes animate-left {
@@ -613,6 +654,16 @@ h1 {
         border-radius: 10px;
         box-shadow: 1px 1px 5px #000;
         background: rgba(100, 100, 100, 0.3);
+    }
+
+    .alert-success {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .alert-success button,
+    .alert-success button:hover {
+        font-size: 2rem;
     }
 }
 
