@@ -18,8 +18,7 @@ html {
 }
 
 body {
-    background-color: #000;
-    background: url('/static/signature-theaters-background1-960.png') no-repeat center center;
+    background: #000 url('/static/signature-theaters-background1-960.png') no-repeat center center;
     background-size: cover;
 }
 
