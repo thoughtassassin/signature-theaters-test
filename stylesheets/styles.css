@@ -697,7 +697,7 @@ h1 {
 
 @media (min-width: 960px) {
     body {
-        background: url('/static/signature-theaters-background1-960.png') no-repeat center center;
+        background: #000 url('/static/signature-theaters-background1-960.png') no-repeat center center;
         background-size: cover;
         background-attachment: fixed;
     }
@@ -727,7 +727,7 @@ h1 {
 
 @media (min-width: 1280px) {
     body {
-        background: url('/static/signature-theaters-background1-1920.png') no-repeat center center;
+        background: #000 url('/static/signature-theaters-background1-1920.png') no-repeat center center;
         background-size: cover;
         background-attachment: fixed;
     }
