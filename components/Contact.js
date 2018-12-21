@@ -150,6 +150,7 @@ class Contact extends React.Component {
                     onChange={this.handleChange}
                     required
                     maxLength="64"
+                    autoComplete="off"
                     ref={this.nameRef}
                   />
                   {name.error &&
@@ -168,6 +169,7 @@ class Contact extends React.Component {
                     pattern={email.valiation}
                     onChange={this.handleChange}
                     maxLength="64"
+                    autoComplete="off"
                     required
                     ref={this.emailRef}
                   />
@@ -188,6 +190,7 @@ class Contact extends React.Component {
                     value={comment.value}
                     pattern={comment.valiation}
                     onChange={this.handleChange}
+                    autoComplete="off"
                     required
                     rows="7"
                     ref={this.commentRef}

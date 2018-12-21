@@ -4,6 +4,7 @@ import Service from '../components/Service'
 import Experience from '../components/Experience'
 import Products from '../components/Products'
 import Contact from '../components/Contact'
+import Chat from '../components/Chat'
 import '../stylesheets/bootstrap.css'
 import '../stylesheets/styles.css'
 
@@ -27,6 +28,7 @@ const Index = () => (
     <Experience />
     <Products />
     <Contact />
+    <Chat />
   </div>
 );
 

@@ -348,6 +348,49 @@ h2 {
     display: inline-block;
 }
 
+.chat {
+    position: fixed;
+    left: 0;
+    bottom: 24px;
+    background: #FFF;
+    transition: all 0.3s ease;
+    max-width: 26.9375rem;
+    background:  #000;
+    color: #FFC629;
+    border-top: 1px solid #FFC629;
+    border-bottom: 1px solid #FFC629;
+    border-right: 1px solid #FFC629;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cls-1 {
+    width: 40px;
+    height: 40px;
+}
+
+.chat.open {
+    width: 80%;
+    height: 100vh;
+    z-index: 3;
+    bottom: 0;
+    background: #000;
+    border: none;
+}
+
+
+.chat.closed {
+    width: 80px;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    line-height: 1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 @-webkit-keyframes fade-in {
     0% {
         -webkit-transform: translate3d(-100%, 0, 0);
