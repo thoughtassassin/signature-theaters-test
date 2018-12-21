@@ -404,7 +404,7 @@ h2 {
 }
 
 .chat header h1 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     letter-spacing: 10px;
     color:  #FFC629;
     text-align: center;
@@ -451,26 +451,48 @@ h2 {
 @-webkit-keyframes fade {
     0% {
         opacity: 0;
+        text-shadow: none;
 
     }
     50% {
         opacity: .2;
+        text-shadow: none;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        text-shadow: 10px 10px 10px #CE0E2D,
+    -10px -10px 10px #CE0E2D,
+    -10px 10px 10px #CE0E2D,
+    10px -10px 10px #CE0E2D;
     }
     100% {
-        opacity: 1;
+        
+        text-shadow: none;
     }
 }
 
 @keyframes fade {
     0% {
         opacity: 0;
+        text-shadow: none;
 
     }
     50% {
-        opacity: .2;
+        text-shadow: none;
+        opacity: 1;
+    }
+    80% {
+        
+        text-shadow: 2px 2px 2px #CE0E2D,
+        -2px -2px 2px #CE0E2D,
+        -2px 2px 2px #CE0E2D,
+        2px -2px 2px #CE0E2D;
     }
     100% {
-        opacity: 1;
+        
+        text-shadow: none;
     }
 }
 
