@@ -374,6 +374,7 @@ h2 {
     z-index: 3;
     bottom: 2.5vh;
     left: 2.5vh;
+    background: url(/static/blackmamba.png);
     border: none;
     border-radius: 20px;
     border: 2px solid #999;
