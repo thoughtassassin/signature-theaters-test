@@ -351,7 +351,7 @@ h2 {
 .chat {
     position: fixed;
     left: 0;
-    bottom: 24px;
+    bottom: 14px;
     background: #FFF;
     transition: all 0.3s ease;
     max-width: 26.9375rem;
