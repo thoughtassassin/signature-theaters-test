@@ -375,8 +375,8 @@ h2 {
     bottom: 2.5vh;
     left: 2.5vh;
     border: none;
-    border-radius: 10px;
-    border: 2px solid #CE0E2D;
+    border-radius: 20px;
+    border: 2px solid #999;
     overflow: hidden;
 }
 
@@ -406,7 +406,6 @@ h2 {
 .chat header h1 {
     font-size: 1.25rem;
     letter-spacing: 10px;
-    color:  #FFC629;
     text-align: center;
     width: 100;
     margin: 0;
@@ -420,12 +419,12 @@ h2 {
     text-align: center;
     position: absolute;
     top: 10px;
-    right: 15px;
-    font-size: 1rem;
-    line-height: 1rem;
+    right: 30px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
     font-weight: 700;
     padding: 0;
-    color:  #FFC629;
+    color:  #999;
     opacity: 1;
 }
 
