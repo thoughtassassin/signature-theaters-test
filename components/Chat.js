@@ -13,10 +13,18 @@ class Chat extends React.Component {
     render() {
         const {open} = this.state;
         return open ?  (
-            <div 
-                onClick={this.toggleOpen} 
+            <div  
                 className="open chat">
-                Open
+                <header>
+                    <h1>Agent Chat</h1>
+                    <div
+                        className="close-chat"
+                        onClick={this.toggleOpen}
+                    >
+                        &#9447;
+                        <span>close</span>
+                    </div>
+                    </header>
             </div>
         ) : (
             <div 

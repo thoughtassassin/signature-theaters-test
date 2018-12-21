@@ -355,7 +355,7 @@ h2 {
     background: #FFF;
     transition: all 0.3s ease;
     max-width: 26.9375rem;
-    background:  #000;
+    background: linear-gradient( #111,#222) ;
     color: #FFC629;
     border-top: 1px solid #FFC629;
     border-bottom: 1px solid #FFC629;
@@ -370,15 +370,19 @@ h2 {
 
 .chat.open {
     width: 80%;
-    height: 100vh;
+    height: 92vh;
     z-index: 3;
-    bottom: 0;
-    background: #000;
+    bottom: 2.5vh;
+    left: 2.5vh;
     border: none;
+    border-radius: 10px;
+    border: 2px solid #CE0E2D;
+    overflow: hidden;
 }
 
 
 .chat.closed {
+    background: #111;
     width: 80px;
     height: 60px;
     display: flex;
@@ -389,6 +393,71 @@ h2 {
     line-height: 1;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.chat header {
+    background: #000;
+    position: relative;
+    width: 100%;
+    animation: fade-in 0.5s ease-in;
+    border-bottom: 1px solid #CE0E2D;
+}
+
+.chat header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    color:  #FFC629;
+    text-align: center;
+    width: 100;
+    margin: 0;
+    padding: 1rem;
+    font-weight: 700;
+    animation: fade 0.8s ease-in;
+}
+
+.chat header .close-chat,
+.chat header .close-chat:hover {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    padding: 0;
+    color:  #FFC629;
+    opacity: 1;
+}
+
+.chat header .close-chat span {
+    display: block;
+    line-height: 0.9rem;
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 0;
+}
+
+
+.chat header:after {
+    content: " ";
+    background: none;
+    position: static;
+    width: auto;
+    box-shadow: none;
+    z-index: 0;
+    height: auto;
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+
+    }
+    50% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes fade-in {
