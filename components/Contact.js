@@ -127,7 +127,7 @@ class Contact extends React.Component {
               <h2>Send An Email</h2>
               {messageSent &&
                 <div className="alert alert-success" role="alert">
-                  <span class="message">Message sent!</span>
+                  <span className="message">Message sent!</span>
                   <button
                     type="button"
                     className="close"
