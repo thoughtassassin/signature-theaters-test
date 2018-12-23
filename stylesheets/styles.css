@@ -401,7 +401,6 @@ h2 {
     position: relative;
     width: 100%;
     animation: fade-in 0.5s ease-in;
-    border-bottom: 1px solid #CE0E2D;
 }
 
 .chat header h1 {
