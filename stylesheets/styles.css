@@ -831,13 +831,6 @@ h1 {
         flex-grow: 0;
     }
 
-    .email{
-        border: 1px solid #CCC;
-        border-radius: 10px;
-        box-shadow: 1px 1px 5px #000;
-        background: rgba(100, 100, 100, 0.3);
-    }
-
     .alert-success {
         font-size: 24px;
         line-height: 28px;
@@ -899,7 +892,7 @@ h1 {
     .contact-info {
         display: flex;
         align-items: baseline;
-        margin: 0.7rem 0 3rem;
+        margin: 0 0 1.5rem;
     }
     .contact-info div:first-child {
         flex: 0.8;
