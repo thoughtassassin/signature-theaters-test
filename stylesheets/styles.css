@@ -52,7 +52,7 @@ header .navbar {
     top: 0;
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid #CE0E2D;
+    border-bottom: 1px solid #000;
     display: flex;
     align-items: center;
 }
