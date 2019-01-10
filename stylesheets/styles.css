@@ -58,8 +58,8 @@ header .navbar {
 }
 
 header .navbar ul {
-    -webkit-transition: max-height 0.4s ease;
-    transition: max-height 0.4s ease;
+    -webkit-transition: max-height 0.5s ease-out;
+    transition: max-height 0.5s ease-out;
 }
 
 .navbar-nav {
@@ -73,7 +73,7 @@ header .navbar ul {
     top: 56px;
     left: -10px;
     max-height: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     margin: 0;
     padding: 0;
 }
@@ -83,6 +83,7 @@ header .navbar ul {
 }
 
 .navbar ul.new-class {
+    
     max-height: 1000px;
 }
 
