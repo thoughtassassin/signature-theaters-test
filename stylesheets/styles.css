@@ -567,13 +567,28 @@ h2 {
 }
 
 .service-list-item img,
-.experience-list-item img,
-.products-list-item img {
+.experience-list-item img {
     max-width: 100%;
     min-width: 100%;
     position: relative;
     border: 2px solid #FFF;
     border-radius: 10px;
+}
+
+.products-list-item img {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 1rem;
+    position: relative;
+    opacity: 0.8;
+}
+
+.products-list-item .product.last {
+    margin-bottom: 0;
+}
+
+.products-list-item .product.last img {
+    padding: 0 8rem;
 }
 
 .service-list-item .col-xs-12,
@@ -627,8 +642,7 @@ h2 {
     animation: animate-right 0.5s ease-in both;
 }
 
-.service-list-item,
-.products-list-item {
+.service-list-item {
     margin-top: 30px;
 }
 
@@ -649,6 +663,10 @@ p {
 
 h1 {
     margin: 80px 0 40px;
+}
+
+#products h1 {
+    margin: 80px 0 0;
 }
 
 #contact h1 {
@@ -754,15 +772,9 @@ h1 {
         justify-content: flex-start;
     }
 
-    .vertical-align > [class^="col-"] > div,
-    .vertical-align > [class*=" col-"] > div {
-        /* flex: 1; */
-    }
-
-    .experience-list-item.vertical-align > [class^="col-"]:first-child > div,
-    .experience-list-item.vertical-align > [class*=" col-"]:first-child > div {
-        /* flex: 1; */
-        flex-grow: 0;
+    .products-list-item img,
+    .products-list-item .product.last img {
+        padding: 2rem;
     }
 
     .alert-success {
