@@ -5,9 +5,9 @@ const Experience = () => (
         <div className="row experience-list-item vertical-align">
           <div className="col-sm-4 col-xs-12">
             <div className="vert-wrapper top">
-              <img src="/static/smith-winfield-1.png" alt="Smith Winfield Library" />
+              <img src="/static/stevens-winfield-1.png" alt="Stevens Winfield Library" />
             </div>
-            <h2>Smith Winfield</h2>
+            <h2>Stevens Winfield</h2>
 
             <p>
               Customer service begins with a signature design tailored to your
