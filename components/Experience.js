@@ -4,7 +4,7 @@ const Experience = () => (
         <h1>Signature Experiences</h1>
         <div className="row experience-list-item vertical-align">
           <div className="col-sm-4 col-xs-12">
-            <div className="vert-wrapper">
+            <div className="vert-wrapper top">
               <img src="/static/smith-winfield-1.png" alt="Smith Winfield Library" />
             </div>
             <h2>Smith Winfield</h2>

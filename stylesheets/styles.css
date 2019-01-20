@@ -218,6 +218,7 @@ h2 {
     2px -2px 10px #CE0E2D;
     font-size: 30px;
     margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .btn-default {
@@ -576,7 +577,7 @@ h2 {
 }
 
 .service-list-item .col-xs-12,
-.experience-list-item .col-xs-12,
+.experience-list-item .vert-wrapper,
 .products-list-item .col-xs-12 {
     margin-bottom: 30px;
 }
@@ -586,7 +587,11 @@ h2 {
     align-self: flex-start;
     justify-content: flex-start;
     flex-grow: 0;
+    margin: 60px 0 30px;
+}
 
+.experience-list-item .vert-wrapper.top {
+    margin-top: 0;
 }
 
 .animation {
@@ -699,6 +704,10 @@ h1 {
         padding: 12px;
     }
 
+    .experience-list-item .vert-wrapper {
+        margin: 0 0 30px;
+    }
+
     .service-list-item div,
     .experience-list-item div,
     .products-list-item div {
@@ -773,13 +782,7 @@ h1 {
         background-size: cover;
         background-attachment: fixed;
     }
-    #service h2 {
-        font-size: 42px;
-        margin-bottom: 1rem;
-    }
-    .vert-wrapper + h2 {
-        margin: 2rem 0 1rem;
-    }
+    
     p {
         font-size: 1.3rem;
     }
@@ -808,6 +811,13 @@ h1 {
         background: #000;
         background-size: cover;
         background-attachment: fixed;
+    }
+    #service h2 {
+        font-size: 42px;
+        margin-bottom: 1rem;
+    }
+    .vert-wrapper + h2 {
+        margin: 0 0 1rem;
     }
     .contact-info {
         display: flex;
