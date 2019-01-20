@@ -24,7 +24,7 @@ const Experience = () => (
                 className="bottom"
               />
             </div>
-            <h2>Saulbury San Subia</h2>
+            <h2>Saulsbury San Subia</h2>
             <p>
               Signature Theaters provides custom home installation of quality
               home theater products, sound systems, and video surveillance for
