@@ -378,6 +378,11 @@ h2 {
     min-width: 100%;
 }
 
+.control4-authorized-dealer {
+    margin: 3rem 0 0;
+    text-align: center;
+}
+
 @-webkit-keyframes fade {
     0% {
         opacity: 0;
@@ -583,7 +588,8 @@ h2 {
     opacity: 0.7;
 }
 
-.products-list-item .product a:hover img {
+.products-list-item .product a:hover img,
+.products-list-item .product a:focus img {
     opacity: 1;
 }
 
