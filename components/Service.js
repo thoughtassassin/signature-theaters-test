@@ -1,12 +1,12 @@
 const Service = () => (
   <section id="service">
     <div className="container">
-      <h1>Signature Service</h1>
+      <h1>Signature Services</h1>
       <div className="row service-list-item vertical-align">
-        <div className="col-sm-6 col-xs-12">
-          <img src="/static/design.png" alt="Blueprints of home" />
+        <div className="col-lg-7 col-sm-6 col-xs-12">
+          <img src="/static/edwards-raquet-club-blueprint.png" alt="Blueprints of Edwards Raquet Club" />
         </div>
-        <div className="col-sm-6 col-xs-12">
+        <div className="col-lg-5 col-sm-6 col-xs-12">
           <h2>Design</h2>
           <p>
             Customer service begins with a signature design tailored to your
@@ -17,14 +17,14 @@ const Service = () => (
         </div>
       </div>
       <div className="row service-list-item vertical-align order-right">
-        <div className="col-sm-6 col-xs-12">
+        <div className="col-lg-7 col-sm-6 col-xs-12">
           <img
-            src="/static/home-security.png"
-            alt="home security camera"
+            src="/static/smith-kahala-stereo.png"
+            alt="Home Stereo Example"
             className="right"
           />
         </div>
-        <div className="col-sm-6 col-xs-12">
+        <div className="col-lg-5 col-sm-6 col-xs-12">
           <h2>Installation</h2>
           <p>
             Signature Theaters provides custom home installation of quality
@@ -37,10 +37,10 @@ const Service = () => (
         </div>
       </div>
       <div className="row service-list-item vertical-align">
-        <div className="col-sm-6 col-xs-12">
-          <img src="/static/home-security.png" alt="home security camera" />
+        <div className="col-lg-7 col-sm-6 col-xs-12">
+          <img src="/static/stevens-winfield-truck.png" alt="Truck in front of home" />
         </div>
-        <div className="col-sm-6 col-xs-12">
+        <div className="col-lg-5 col-sm-6 col-xs-12">
           <h2>Support</h2>
           <p>
             Signature Theaters provides custom home installation of quality

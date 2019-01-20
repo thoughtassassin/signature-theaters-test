@@ -33,12 +33,12 @@ class Header extends Component {
           <ul className={open ? 'nav navbar-nav new-class' : 'nav navbar-nav'}>
             <li>
               <AnchorLink onClick={this.handleCloseClick} href="#service">
-                Service
+                Services
               </AnchorLink>
             </li>
             <li>
               <AnchorLink onClick={this.handleCloseClick} href="#experience">
-                Experience
+                Experiences
               </AnchorLink>
             </li>
             <li>
