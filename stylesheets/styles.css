@@ -252,6 +252,7 @@ section {
 }
 .opening-content ul li {
     text-align: center;
+    margin: 0.25rem 0;
 }
     
 
@@ -917,6 +918,9 @@ h1 {
     }
     .opening-content ul {
         flex-direction: row;
+    }
+    .opening-content ul li {
+        margin: 0;
     }
     #service {
         top: 100%;
