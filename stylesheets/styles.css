@@ -250,6 +250,9 @@ section {
     flex-direction: column;
     align-items: center;
 }
+.opening-content ul li {
+    text-align: center;
+}
     
 
 .experience,
