@@ -1,14 +1,12 @@
-const Experience = () => (
-<section className="experience" id="experience">
+const Projects = () => (
+<section className="projects" id="projects">
       <div className="container">
-        <h1>Signature Experiences</h1>
-        <div className="row experience-list-item vertical-align">
+        <h1>Signature Projects</h1>
+        <div className="row projects-list-item vertical-align">
           <div className="col-sm-4 col-xs-12">
             <div className="vert-wrapper top">
               <img src="/static/stevens-winfield-1.png" alt="Stevens Winfield Library" />
             </div>
-            <h2>Stevens Winfield</h2>
-
             <p>
               Customer service begins with a signature design tailored to your
               personal preferences. Using sophisticated software to design the
@@ -24,7 +22,6 @@ const Experience = () => (
                 className="bottom"
               />
             </div>
-            <h2>Saulsbury San Subia</h2>
             <p>
               Signature Theaters provides custom home installation of quality
               home theater products, sound systems, and video surveillance for
@@ -37,7 +34,6 @@ const Experience = () => (
             <div className="vert-wrapper">
               <img src="/static/smith-kahala-1.png" alt="Smith Kahala Theater" />
             </div>
-            <h2>Smith Kahala</h2>
             <p>
               Signature Theaters provides custom home installation of quality
               home theater products, sound systems, and video surveillance for
@@ -51,4 +47,4 @@ const Experience = () => (
     </section>
 )
 
-export default Experience
+export default Projects

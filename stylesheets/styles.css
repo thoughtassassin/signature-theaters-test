@@ -208,7 +208,7 @@ section {
     width: 100%;
     opacity: 1;
     margin: 0;
-    bottom: 6rem;
+    bottom: 0;
 
 }
 
@@ -218,7 +218,8 @@ section {
     animation: introduce 0.3s ease-in 1.5s;
     animation-fill-mode: forwards;
     padding: 0.5rem 0.5rem 0.1rem;
-    border-radius: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .opening-content h1 {
@@ -238,25 +239,22 @@ section {
 
 .opening-content ul {
     font-size: 1rem;
-    list-style: none;
     letter-spacing: 2px;
+    list-style: none;
     display: flex;
     opacity: 0.8;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0 1rem;
     width: 100%;
-    text-transform: uppercase;
     font-family: Helvetica;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 .opening-content ul li {
     text-align: center;
-    margin: 0.25rem 0;
+    margin: 0 1rem;
 }
     
-
-.experience,
+.projects,
 .contact {
     background: url(/static/blackmamba.png);
 }
@@ -453,12 +451,6 @@ h2 {
     }
 }
 
-
-.control4-authorized-dealer {
-    margin: 3rem 0 0;
-    text-align: center;
-}
-
 @-webkit-keyframes fade {
     0% {
         opacity: 0;
@@ -648,7 +640,7 @@ h2 {
 }
 
 .service-list-item img,
-.experience-list-item img {
+.projects-list-item img {
     max-width: 100%;
     min-width: 100%;
     position: relative;
@@ -678,12 +670,12 @@ h2 {
 }
 
 .service-list-item .col-xs-12,
-.experience-list-item .vert-wrapper,
+.projects-list-item .vert-wrapper,
 .products-list-item .col-xs-12 {
     margin-bottom: 30px;
 }
 
-.experience-list-item .vert-wrapper {
+.projects-list-item .vert-wrapper {
     overflow: hidden;
     align-self: flex-start;
     justify-content: flex-start;
@@ -691,7 +683,7 @@ h2 {
     margin: 60px 0 30px;
 }
 
-.experience-list-item .vert-wrapper.top {
+.projects-list-item .vert-wrapper.top {
     margin-top: 0;
 }
 
@@ -713,12 +705,12 @@ h2 {
     animation: animate-left 0.5s ease-in both;
 }
 
-.experience-list-item .animation.in-view {
+.projects-list-item .animation.in-view {
     -webkit-animation: animate-top 0.5s ease-in both;
     animation: animate-top 0.5s ease-in both;
 }
 
-.experience-list-item .animation.in-view.bottom {
+.projects-list-item .animation.in-view.bottom {
     -webkit-animation: animate-bottom 0.5s ease-in both;
     animation: animate-bottom 0.5s ease-in both;
 }
@@ -778,7 +770,8 @@ h1 {
     }
     .phone {
         font-size: 48px;
-    }  
+    }
+      
 }
 
 @media (min-width: 768px) {
@@ -799,6 +792,16 @@ h1 {
         padding: auto;
     }
 
+    .projects-list-item .vert-wrapper {
+        margin: 0 0 30px;
+    }
+
+    .col-sm-6,
+    .col-sm-6 {
+        width: 100%;
+        float: none;
+    }
+
     .navbar ul li {
         margin: auto;
         flex: 0 1 auto;
@@ -806,61 +809,6 @@ h1 {
 
     .navbar-nav > li > a {
         padding: 12px;
-    }
-
-    .experience-list-item .vert-wrapper {
-        margin: 0 0 30px;
-    }
-
-    .service-list-item div,
-    .experience-list-item div,
-    .products-list-item div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .service-list-item .col-xs-12,
-    .experience-list-item .col-xs-12,
-    .products-list-item .col-xs-12{
-        margin-bottom: 0;
-    }
-
-    .service-list-item h2,
-    .experience-list-item .col-xs-12,
-    .products-list-item h2 {
-        margin-top: 0;
-    }
-
-    .contact-info {
-        margin: 0.5rem 0 1.5rem;
-        overflow: auto;
-    }
-
-    .vertical-align {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .vertical-align.order-right > .col-sm-6:first-child {
-        order: 2;
-    }
-
-    .vertical-align > [class^="col-"],
-    .vertical-align > [class*=" col-"] {
-        display: flex;
-        align-items: left;
-        justify-content: center;
-    }
-
-    .experience-list-item.vertical-align > [class^="col-"],
-    .experience-list-item.vertical-align > [class*=" col-"] {
-        justify-content: flex-start;
-    }
-
-    .products-list-item img,
-    .products-list-item .product.last img {
-        padding: 2rem;
     }
 
     .alert-success {
@@ -884,13 +832,67 @@ h1 {
     p {
         font-size: 1.3rem;
     }
-
+    .col-sm-6 {
+        width: 100%;
+    }
     .navbar-nav {
         letter-spacing: 5px;
     }
 
     .navbar-nav > li > a {
         padding: 15px;
+    }
+
+    .service-list-item div,
+    .projects-list-item div,
+    .products-list-item div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .service-list-item .col-xs-12,
+    .projects-list-item .col-xs-12,
+    .products-list-item .col-xs-12{
+        margin-bottom: 0;
+    }
+
+    .service-list-item h2,
+    .projects-list-item .col-xs-12,
+    .products-list-item h2 {
+        margin-top: 0;
+    }
+
+    .contact-info {
+        margin: 0.5rem 0 1.5rem;
+        overflow: auto;
+    }
+
+    .vertical-align {
+        display: flex;
+        flex-direction: row;
+        margin: 5rem 0;
+    }
+
+    .vertical-align.order-right > .col-lg-7:first-child {
+        order: 2;
+    }
+
+    .vertical-align > [class^="col-"],
+    .vertical-align > [class*=" col-"] {
+        display: flex;
+        align-items: left;
+        justify-content: ;
+    }
+
+    .projects-list-item.vertical-align > [class^="col-"],
+    .projects-list-item.vertical-align > [class*=" col-"] {
+        justify-content: flex-start;
+    }
+
+    .products-list-item img,
+    .products-list-item .product.last img {
+        padding: 2rem;
     }
 
     .service-list-item img,
@@ -911,10 +913,7 @@ h1 {
         background-attachment: fixed;
     }
     .opening-content {
-        position: fixed;
-    }
-    .opening-content div {
-        min-width: 50%;
+        position: absolute;
     }
     .opening-content ul {
         flex-direction: row;
@@ -942,9 +941,6 @@ h1 {
     }
     .contact-info div {
         flex: 1;
-    }
-    .vertical-align {
-        margin: 5rem 0;
     }
     .fullscreen-bg {
         display: flex;

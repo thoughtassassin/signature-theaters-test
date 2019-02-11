@@ -1,9 +1,8 @@
 import Head from 'next/head';
 import BackgroundVideo from '../components/BackgroundVideo';
-import OpeningContent from '../components/OpeningContent';
 import Header from '../components/Header';
 import Service from '../components/Service';
-import Experience from '../components/Experience';
+import Projects from '../components/Projects';
 import Products from '../components/Products';
 import Contact from '../components/Contact';
 import '../stylesheets/bootstrap.css';
@@ -33,10 +32,9 @@ class Index extends React.Component {
           <script data-cfasync="false" src="/static/chat.js" />
         </Head>
         <BackgroundVideo />
-        <OpeningContent />
         <Header />
         <Service />
-        <Experience />
+        <Projects />
         <Products />
         <Contact />
       </div>
