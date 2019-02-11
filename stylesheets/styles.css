@@ -455,7 +455,6 @@ h2 {
     0% {
         opacity: 0;
         text-shadow: none;
-
     }
     50% {
         opacity: .2;
@@ -747,6 +746,10 @@ h1 {
     margin: 80px 0 0;
 }
 
+#products {
+    padding-bottom: 20px
+}
+
 #contact h1 {
     font-size: 40px;
     margin: 80px 0 0;
@@ -768,6 +771,7 @@ h1 {
     #contact h2 {
         margin-top: 20px;
     }
+
     .phone {
         font-size: 48px;
     }
@@ -903,6 +907,10 @@ h1 {
     h1,
     #contact h1 {
         font-size: 72px;
+    }
+
+    #products {
+        padding-bottom: 80px;
     }
 }
 
