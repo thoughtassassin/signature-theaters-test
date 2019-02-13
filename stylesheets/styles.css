@@ -198,60 +198,26 @@ section {
     border-top: 1px solid #FFC629;
 }
 
-.opening-content {
+p {
+    letter-spacing: 1px;
+}
+
+
+.opening-text {
+    width: 100%;
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
+    padding: 5rem 0;
+    background: linear-gradient(transparent 0%, rgba(0,0,0,0.5) 40%);
+    text-shadow: 2px 2px 0 #000;
     color: #FFF;
-    width: 100%;
-    opacity: 1;
-    margin: 0;
     bottom: 0;
-
-}
-
-.opening-content div {
-    background: rgba(0,0,0,0.8);
-    opacity: 0;
-    animation: introduce 0.3s ease-in 1.5s;
-    animation-fill-mode: forwards;
-    padding: 0.5rem 0.5rem 0.1rem;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.opening-content h1 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.5rem;
-    opacity: 0.8;
-    margin-left: 20px;
-    letter-spacing: 5px;
-    color: #FFC629;
-    text-align: center;
-}
-
-.opening-content div div {
-    display: flex;
-    background: none;
-}
-
-.opening-content ul {
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
-    list-style: none;
-    display: flex;
-    opacity: 0.8;
-    justify-content: flex-start;
-    padding: 0 1rem;
-    width: 100%;
-    font-family: Helvetica;
-    align-items: flex-start;
 }
-.opening-content ul li {
-    text-align: center;
-    margin: 0 1rem;
+
+.opening-text div {
+    max-width: 70%;
+    margin: 0 auto;
 }
     
 .projects,
@@ -735,7 +701,7 @@ h2 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 h1 {
@@ -847,6 +813,11 @@ h1 {
         padding: 15px;
     }
 
+    .opening-text {
+        padding: 5rem 0 3rem;
+        position: fixed;
+    }
+
     .service-list-item div,
     .projects-list-item div,
     .products-list-item div {
@@ -886,7 +857,7 @@ h1 {
     .vertical-align > [class*=" col-"] {
         display: flex;
         align-items: left;
-        justify-content: ;
+        justify-content: center;
     }
 
     .projects-list-item.vertical-align > [class^="col-"],
@@ -919,15 +890,6 @@ h1 {
         background: #000;
         background-size: cover;
         background-attachment: fixed;
-    }
-    .opening-content {
-        position: absolute;
-    }
-    .opening-content ul {
-        flex-direction: row;
-    }
-    .opening-content ul li {
-        margin: 0;
     }
     #service {
         top: 100%;

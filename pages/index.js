@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import BackgroundVideo from '../components/BackgroundVideo';
 import Header from '../components/Header';
+import OpeningContent from '../components/OpeningContent';
 import Service from '../components/Service';
 import Projects from '../components/Projects';
 import Products from '../components/Products';
@@ -32,6 +33,7 @@ class Index extends React.Component {
           <script data-cfasync="false" src="/static/chat.js" />
         </Head>
         <BackgroundVideo />
+        <OpeningContent />
         <Header />
         <Service />
         <Projects />
