@@ -12,8 +12,8 @@ const Service = () => (
         <div className="col-lg-5 col-sm-6 col-xs-12">
           <h2>Design</h2>
           <p>
-            After a free consultation, customer needs and preferences are established.
-            The Design phase begins for Signature Theaters producing a detailed customer
+            A free consultation establishes needs and preferences. Subsequently, 
+            Signature Theaters begins the design phase by producing a detailed customer 
             proposal equipped with home schematic and blueprint. Customers make any
             revisions necessary.
           </p>
@@ -33,7 +33,7 @@ const Service = () => (
             After the Design phase is complete, installation timeframes
             are established. Signature Theater provides Cedia Certified
             professionals and over 25 years of industry experience for
-            the Installation phase. Customer satisfaction is our highest priority.
+            the installation phase. Customer satisfaction is our highest priority.
           </p>
 
         </div>
@@ -51,7 +51,7 @@ const Service = () => (
             Establishing long-term relationships with clients ensures
             satisfaction is on-going. Through remote troubleshooting,
             Signature Theaters can monitor systems to avoid any potential
-            problems and can conduct updates remotely. Technicians are
+            problems. Updates can be conducted remotely. Technicians are
             always available by phone for support.
           </p>
         </div>
