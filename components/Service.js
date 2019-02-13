@@ -30,7 +30,7 @@ const Service = () => (
         <div className="col-lg-5 col-sm-6 col-xs-12">
           <h2>Installation</h2>
           <p>
-            After the Design phase is complete, installation timeframes
+            After the design phase is complete, installation timeframes
             are established. Signature Theater provides Cedia Certified
             professionals and over 25 years of industry experience for
             the installation phase. Customer satisfaction is our highest priority.
