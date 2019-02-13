@@ -206,7 +206,7 @@ p {
 .opening-text {
     width: 100%;
     position: absolute;
-    padding: 5rem 0;
+    padding: 5rem 0 6rem;
     background: linear-gradient(transparent 0%, rgba(0,0,0,0.5) 40%);
     text-shadow: 2px 2px 0 #000;
     color: #FFF;
