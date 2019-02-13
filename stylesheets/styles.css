@@ -843,6 +843,10 @@ h1 {
         overflow: auto;
     }
 
+    .vert-wrapper + h2 {
+        text-align: center;
+    }
+
     .vertical-align {
         display: flex;
         flex-direction: row;
