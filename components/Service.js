@@ -12,7 +12,7 @@ const Service = () => (
         <div className="col-lg-5 col-sm-6 col-xs-12">
           <h2>Design</h2>
           <p>
-            A free consultation establishes needs and preferences. Subsequently, 
+            A free consultation establishes needs and preferences. Afterwards 
             Signature Theaters begins the design phase by producing a detailed customer 
             proposal equipped with home schematic and blueprint. Customers make any
             revisions necessary.
