@@ -191,8 +191,6 @@ section {
     color: #FFF;
     position: relative;
     top: 100%;
-    display: flex;
-    align-items: center;
     transition: all 1s ease;
     padding-bottom: 80px;
     border-top: 1px solid #FFC629;
@@ -711,14 +709,6 @@ p {
 
 h1 {
     margin: 80px 0 40px;
-}
-
-#products h1 {
-    margin: 80px 0 0;
-}
-
-#products {
-    padding-bottom: 20px
 }
 
 #contact h1 {
