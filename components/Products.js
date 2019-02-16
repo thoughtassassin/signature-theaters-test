@@ -43,7 +43,7 @@ const Products = () => (
             <img src="/static/sony-logo.svg" alt="Sony logo" />
           </a>
         </div>
-        <div className="col-sm-4 col-xs-12 product last">
+        <div className="col-sm-4 col-xs-6 product">
           <a href="https://www.triadspeakers.com/" target="_blank">
             <img src="/static/triad-logo.svg" alt="Triad logo" />
           </a>

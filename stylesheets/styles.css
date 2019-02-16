@@ -191,72 +191,34 @@ section {
     color: #FFF;
     position: relative;
     top: 100%;
-    display: flex;
-    align-items: center;
     transition: all 1s ease;
     padding-bottom: 80px;
     border-top: 1px solid #FFC629;
 }
 
-.opening-content {
+p {
+    letter-spacing: 1px;
+}
+
+
+.opening-text {
+    width: 100%;
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
+    padding: 5rem 0 6rem;
+    background: linear-gradient(transparent 0%, rgba(0,0,0,0.5) 40%);
+    text-shadow: 2px 2px 0 #000;
     color: #FFF;
-    width: 100%;
-    opacity: 1;
-    margin: 0;
-    bottom: 6rem;
-
-}
-
-.opening-content div {
-    background: rgba(0,0,0,0.8);
-    opacity: 0;
-    animation: introduce 0.3s ease-in 1.5s;
-    animation-fill-mode: forwards;
-    padding: 0.5rem 0.5rem 0.1rem;
-    border-radius: 2px;
-}
-
-.opening-content h1 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.5rem;
-    opacity: 0.8;
-    margin-left: 20px;
-    letter-spacing: 5px;
-    color: #FFC629;
-    text-align: center;
-}
-
-.opening-content div div {
-    display: flex;
-    background: none;
-}
-
-.opening-content ul {
-    font-size: 1rem;
-    list-style: none;
+    bottom: 0;
+    font-size: 1.2rem;
     letter-spacing: 2px;
-    display: flex;
-    opacity: 0.8;
-    justify-content: space-between;
-    padding: 0 1rem;
-    width: 100%;
-    text-transform: uppercase;
-    font-family: Helvetica;
-    flex-direction: column;
-    align-items: center;
 }
-.opening-content ul li {
-    text-align: center;
-    margin: 0.25rem 0;
+
+.opening-text div {
+    max-width: 80%;
+    margin: 0 auto;
 }
     
-
-.experience,
+.projects,
 .contact {
     background: url(/static/blackmamba.png);
 }
@@ -434,7 +396,6 @@ h2 {
     left: 0;
     min-height: 100%;
     min-width: 100%;
-    opacity: 1;
 }
 
 .fade-bottom {
@@ -453,17 +414,10 @@ h2 {
     }
 }
 
-
-.control4-authorized-dealer {
-    margin: 3rem 0 0;
-    text-align: center;
-}
-
 @-webkit-keyframes fade {
     0% {
         opacity: 0;
         text-shadow: none;
-
     }
     50% {
         opacity: .2;
@@ -648,12 +602,16 @@ h2 {
 }
 
 .service-list-item img,
-.experience-list-item img {
+.projects-list-item img {
     max-width: 100%;
     min-width: 100%;
     position: relative;
     border: 2px solid #FFF;
     border-radius: 10px;
+}
+
+.service-list-item .col-sm-6 {
+    width: 100%;
 }
 
 .products-list-item img {
@@ -678,12 +636,12 @@ h2 {
 }
 
 .service-list-item .col-xs-12,
-.experience-list-item .vert-wrapper,
+.projects-list-item .vert-wrapper,
 .products-list-item .col-xs-12 {
     margin-bottom: 30px;
 }
 
-.experience-list-item .vert-wrapper {
+.projects-list-item .vert-wrapper {
     overflow: hidden;
     align-self: flex-start;
     justify-content: flex-start;
@@ -691,8 +649,9 @@ h2 {
     margin: 60px 0 30px;
 }
 
-.experience-list-item .vert-wrapper.top {
-    margin-top: 0;
+.projects-list-item h2 {
+    text-align: center;
+    padding: 1rem 0;
 }
 
 .animation {
@@ -713,12 +672,12 @@ h2 {
     animation: animate-left 0.5s ease-in both;
 }
 
-.experience-list-item .animation.in-view {
+.projects-list-item .animation.in-view {
     -webkit-animation: animate-top 0.5s ease-in both;
     animation: animate-top 0.5s ease-in both;
 }
 
-.experience-list-item .animation.in-view.bottom {
+.projects-list-item .animation.in-view.bottom {
     -webkit-animation: animate-bottom 0.5s ease-in both;
     animation: animate-bottom 0.5s ease-in both;
 }
@@ -744,15 +703,11 @@ h2 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 h1 {
     margin: 80px 0 40px;
-}
-
-#products h1 {
-    margin: 80px 0 0;
 }
 
 #contact h1 {
@@ -776,9 +731,11 @@ h1 {
     #contact h2 {
         margin-top: 20px;
     }
+
     .phone {
         font-size: 48px;
-    }  
+    }
+      
 }
 
 @media (min-width: 768px) {
@@ -799,6 +756,10 @@ h1 {
         padding: auto;
     }
 
+    .projects-list-item {
+        margin: 0 0 30px;
+    }
+
     .navbar ul li {
         margin: auto;
         flex: 0 1 auto;
@@ -806,61 +767,6 @@ h1 {
 
     .navbar-nav > li > a {
         padding: 12px;
-    }
-
-    .experience-list-item .vert-wrapper {
-        margin: 0 0 30px;
-    }
-
-    .service-list-item div,
-    .experience-list-item div,
-    .products-list-item div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .service-list-item .col-xs-12,
-    .experience-list-item .col-xs-12,
-    .products-list-item .col-xs-12{
-        margin-bottom: 0;
-    }
-
-    .service-list-item h2,
-    .experience-list-item .col-xs-12,
-    .products-list-item h2 {
-        margin-top: 0;
-    }
-
-    .contact-info {
-        margin: 0.5rem 0 1.5rem;
-        overflow: auto;
-    }
-
-    .vertical-align {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .vertical-align.order-right > .col-sm-6:first-child {
-        order: 2;
-    }
-
-    .vertical-align > [class^="col-"],
-    .vertical-align > [class*=" col-"] {
-        display: flex;
-        align-items: left;
-        justify-content: center;
-    }
-
-    .experience-list-item.vertical-align > [class^="col-"],
-    .experience-list-item.vertical-align > [class*=" col-"] {
-        justify-content: flex-start;
-    }
-
-    .products-list-item img,
-    .products-list-item .product.last img {
-        padding: 2rem;
     }
 
     .alert-success {
@@ -871,6 +777,10 @@ h1 {
     .alert-success button,
     .alert-success button:hover {
         font-size: 2rem;
+    }
+
+    .service-list-item.vertical-align {
+        display: block;
     }
 }
 
@@ -884,13 +794,71 @@ h1 {
     p {
         font-size: 1.3rem;
     }
-
     .navbar-nav {
         letter-spacing: 5px;
     }
 
     .navbar-nav > li > a {
         padding: 15px;
+    }
+
+    .opening-text {
+        padding: 5rem 0 3rem;
+        position: fixed;
+    }
+
+    .service-list-item div,
+    .products-list-item div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .service-list-item .col-xs-12,
+    .products-list-item .col-xs-12{
+        margin-bottom: 0;
+    }
+
+    .service-list-item h2,
+    .projects-list-item .col-xs-12,
+    .products-list-item h2 {
+        margin-top: 0;
+    }
+
+    .contact-info {
+        margin: 0.5rem 0 1.5rem;
+        overflow: auto;
+    }
+
+    .vert-wrapper + h2 {
+        text-align: center;
+    }
+
+    .vertical-align {
+        display: flex;
+        flex-direction: row;
+        margin: 5rem 0;
+    }
+
+    .vertical-align.order-right > .col-lg-7:first-child {
+        order: 2;
+    }
+
+    .vertical-align > [class^="col-"],
+    .vertical-align > [class*=" col-"] {
+        display: flex;
+        align-items: left;
+        justify-content: center;
+    }
+
+    .projects-list-item.vertical-align > [class^="col-"],
+    .projects-list-item.vertical-align > [class*=" col-"] {
+        justify-content: flex-start;
+    }
+
+    .products-list-item img,
+    .products-list-item .product.last img {
+        padding: 2rem;
     }
 
     .service-list-item img,
@@ -902,6 +870,16 @@ h1 {
     #contact h1 {
         font-size: 72px;
     }
+
+    #products {
+        padding-bottom: 80px;
+    }
+}
+
+@media (min-width: 991px) {
+    .service-list-item.vertical-align {
+        display: flex;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -910,24 +888,16 @@ h1 {
         background-size: cover;
         background-attachment: fixed;
     }
-    .opening-content {
-        position: fixed;
-    }
-    .opening-content div {
-        min-width: 50%;
-    }
-    .opening-content ul {
-        flex-direction: row;
-    }
-    .opening-content ul li {
-        margin: 0;
-    }
     #service {
         top: 100%;
     }
-    #service h2 {
+    #service h2,
+    #projects h2  {
         font-size: 42px;
         margin-bottom: 1rem;
+    }
+    #projects h2 {
+        padding: 2rem 0;
     }
     .vert-wrapper + h2 {
         margin: 0 0 1rem;
@@ -942,9 +912,6 @@ h1 {
     }
     .contact-info div {
         flex: 1;
-    }
-    .vertical-align {
-        margin: 5rem 0;
     }
     .fullscreen-bg {
         display: flex;

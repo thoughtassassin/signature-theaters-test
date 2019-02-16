@@ -207,9 +207,6 @@ class Contact extends React.Component {
                 </div>
               </form>
             </div>
-            <div className="control4-authorized-dealer col-xs-12">
-                <img src="/static/C4_Dealer_Status_Badges_horz_2018_Gold.png" alt="Control4 authorized dealer 2018" />
-            </div>
           </div>
         </div>
       </section>

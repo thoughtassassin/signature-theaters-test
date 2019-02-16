@@ -37,8 +37,8 @@ class Header extends Component {
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink onClick={this.handleCloseClick} href="#experience">
-                Experiences
+              <AnchorLink onClick={this.handleCloseClick} href="#projects">
+                Projects
               </AnchorLink>
             </li>
             <li>
