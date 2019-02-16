@@ -33,7 +33,6 @@ class Index extends React.Component {
           <script data-cfasync="false" src="/static/chat.js" />
         </Head>
         <BackgroundVideo />
-        <OpeningContent />
         <Header />
         <Service />
         <Projects />

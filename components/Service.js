@@ -32,9 +32,9 @@ const Service = () => (
           <h2>Installation</h2>
           <p>
             After an agreement is made on a design, we use our 25 years of experience
-            and Cedia Certified professionals to insure that ever install is done as 
+            and Cedia Certified professionals to insure that every install is done as 
             if it were our home.  We know what makes a great installation are the 
-            little things that our clients will likely never see.  Our client’s 
+            little things that our clients will likely never see. Our client’s 
             satisfaction is the most important part of this process. 
           </p>
 
