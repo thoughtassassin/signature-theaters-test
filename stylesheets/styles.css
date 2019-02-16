@@ -613,6 +613,10 @@ h2 {
     border-radius: 10px;
 }
 
+.service-list-item .col-sm-6 {
+    width: 100%;
+}
+
 .products-list-item img {
     max-width: 100%;
     min-width: 100%;
@@ -648,8 +652,9 @@ h2 {
     margin: 60px 0 30px;
 }
 
-.projects-list-item .vert-wrapper.top {
-    margin-top: 0;
+.projects-list-item h2 {
+    text-align: center;
+    padding: 1rem 0;
 }
 
 .animation {
@@ -762,14 +767,8 @@ h1 {
         padding: auto;
     }
 
-    .projects-list-item .vert-wrapper {
+    .projects-list-item {
         margin: 0 0 30px;
-    }
-
-    .col-sm-6,
-    .col-sm-6 {
-        width: 100%;
-        float: none;
     }
 
     .navbar ul li {
@@ -790,6 +789,10 @@ h1 {
     .alert-success button:hover {
         font-size: 2rem;
     }
+
+    .service-list-item.vertical-align {
+        display: block;
+    }
 }
 
 @media (min-width: 960px) {
@@ -801,9 +804,6 @@ h1 {
     
     p {
         font-size: 1.3rem;
-    }
-    .col-sm-6 {
-        width: 100%;
     }
     .navbar-nav {
         letter-spacing: 5px;
@@ -819,7 +819,6 @@ h1 {
     }
 
     .service-list-item div,
-    .projects-list-item div,
     .products-list-item div {
         display: flex;
         flex-direction: column;
@@ -827,7 +826,6 @@ h1 {
     }
 
     .service-list-item .col-xs-12,
-    .projects-list-item .col-xs-12,
     .products-list-item .col-xs-12{
         margin-bottom: 0;
     }
@@ -889,6 +887,12 @@ h1 {
     }
 }
 
+@media (min-width: 991px) {
+    .service-list-item.vertical-align {
+        display: flex;
+    }
+}
+
 @media (min-width: 1280px) {
     body {
         background: #000;
@@ -898,9 +902,13 @@ h1 {
     #service {
         top: 100%;
     }
-    #service h2 {
+    #service h2,
+    #projects h2  {
         font-size: 42px;
         margin-bottom: 1rem;
+    }
+    #projects h2 {
+        padding: 2rem 0;
     }
     .vert-wrapper + h2 {
         margin: 0 0 1rem;
