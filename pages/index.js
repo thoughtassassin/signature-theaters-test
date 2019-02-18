@@ -30,6 +30,10 @@ class Index extends React.Component {
             rel="stylesheet"
           />
           <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=UA-134677065-1`}
+          />
+          <script
             dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];
@@ -38,10 +42,6 @@ class Index extends React.Component {
             gtag('config', 'UA-134677065-1');
           `,
             }}
-          />
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=UA-134677065-1`}
           />
           <script src="https://www.google.com/recaptcha/api.js?render=6Lcdd4EUAAAAAHBWMAYgcS2KxkXt4_cc_1e6yIDa" />
           <script data-cfasync="false" src="/static/chat.js" />
