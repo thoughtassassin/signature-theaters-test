@@ -56,6 +56,14 @@ app
       ;
     });
 
+    server.get('*', (req,res,next) => {
+      if(req.headers['x-forwarded-proto'] != 'https' && process.env.NODE_ENV === 'production') {
+        res.redirect('https://' + req.hostname + req.url);
+      } else {
+        next(); 
+      }
+    });
+
     server.get ('*', (req, res) => {
       return handle (req, res);
     });
