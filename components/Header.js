@@ -32,22 +32,22 @@ class Header extends Component {
           </button>
           <ul className={open ? 'nav navbar-nav new-class' : 'nav navbar-nav'}>
             <li>
-              <AnchorLink onClick={this.handleCloseClick} href="#service">
+              <AnchorLink rel="nofollow" onClick={this.handleCloseClick} href="#service">
                 Services
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink onClick={this.handleCloseClick} href="#projects">
+              <AnchorLink rel="nofollow" onClick={this.handleCloseClick} href="#projects">
                 Projects
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink onClick={this.handleCloseClick} href="#products">
+              <AnchorLink rel="nofollow" onClick={this.handleCloseClick} href="#products">
                 Products
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink onClick={this.handleCloseClick} href="#contact">
+              <AnchorLink rel="nofollow" onClick={this.handleCloseClick} href="#contact">
                 Contact us
               </AnchorLink>
             </li>
