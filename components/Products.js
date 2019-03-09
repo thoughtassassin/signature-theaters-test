@@ -49,6 +49,26 @@ const Products = () => (
           </a>
         </div>
       </div>
+      <div className="dealer-status">
+        <div>
+          <img src="/static/dealer-status-logos-01.svg" alt="Control 4 Authorized Gold Dealer 2014" />
+        </div>
+        <div>
+          <img src="/static/dealer-status-logos-02.svg" alt="Control 4 Authorized Gold Dealer 2015" />
+        </div>
+        <div>
+          <img src="/static/dealer-status-logos-03.svg" alt="Control 4 Authorized Gold Dealer 2016" />
+        </div>
+        <div>
+          <img src="/static/dealer-status-logos-04.svg" alt="Control 4 Authorized Gold Dealer 2017" />
+        </div>
+        <div>
+          <img src="/static/dealer-status-logos-05.svg" alt="Control 4 Authorized Gold Dealer 2018" />
+        </div>
+        <div>
+          <img src="/static/dealer-status-logos-06.svg" alt="Control 4 Authorized Platinum Dealer 2019" />
+        </div>
+      </div>
     </div>
   </section>
 );
