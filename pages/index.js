@@ -25,6 +25,9 @@ class Index extends React.Component {
             name="apple-mobile-web-app-status-bar-style"
             content="black-translucent"
           />
+          <meta name="description" 
+            content="Signature Theaters designs and installs custom home theater and home automation systems. Serving the Permian Basin since 2008."
+          />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=UA-134677065-1`}
