@@ -200,7 +200,6 @@ p {
     letter-spacing: 1px;
 }
 
-
 .opening-text {
     width: 100%;
     position: absolute;
@@ -719,6 +718,26 @@ h1 {
 #contact h2 {
     margin-top: 20px;
 }
+.dealer-status {
+    margin: 4rem 0 0;
+    display: grid;
+    grid-template-columns: 75px 75px 75px;
+    grid-template-rows: 75px 75px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+}
+.dealer-status div {
+    width: 75px;
+    height: 75px; 
+}
+
+@media (min-width: 510px) {
+    .dealer-status {
+        grid-template-columns: 75px 75px 75px 75px 75px 75px;
+        grid-template-rows: 75px;
+    }
+}
 
 @media (min-width: 422px) {
     h1 {
@@ -735,7 +754,6 @@ h1 {
     .phone {
         font-size: 48px;
     }
-      
 }
 
 @media (min-width: 768px) {
