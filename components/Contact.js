@@ -120,7 +120,7 @@ class Contact extends React.Component {
               </div>
               <div className="col-xs-12">
                 <h2 className="phone-label">Call</h2>
-                <p className="phone">432-889-8458</p>
+                <p className="phone">432-889-8548</p>
               </div>
             </div>
             <div className="col-xs-12 email">

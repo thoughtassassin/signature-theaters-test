@@ -33,7 +33,7 @@ const Service = () => (
           <p>
             After an agreement is made on a design, we use our 25 years of experience
             and Cedia Certified professionals to insure that every install is done as 
-            if it were our home.  We know what makes a great installation are the 
+            if it were our home. We know what makes a great installation are the 
             little things that our clients will likely never see. Our client’s 
             satisfaction is the most important part of this process. 
           </p>
@@ -50,9 +50,9 @@ const Service = () => (
         <div className="col-lg-5 col-sm-6 col-xs-12">
           <h2>Support</h2>
           <p>
-            Establishing long term personal relationships with our clients
-            after the install through years of unfailing support is the key
-            to our success.  Using remote troubleshooting access and service 
+            Establishing long term personal relationships with our clients 
+            through years of unfailing support after the install is the key 
+            to our success. Using remote troubleshooting access and service 
             contracts, we monitor and update your system remotely, heading 
             off any potential problems, and doing what we do best: making 
             sure your system performs as it should.
