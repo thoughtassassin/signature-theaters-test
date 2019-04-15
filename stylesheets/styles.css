@@ -719,24 +719,15 @@ h1 {
     margin-top: 20px;
 }
 .dealer-status {
-    margin: 4rem 0 0;
-    display: grid;
-    grid-template-columns: 75px 75px 75px;
-    grid-template-rows: 75px 75px;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-content: center;
+    margin-top: 1rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 .dealer-status div {
-    width: 75px;
-    height: 75px; 
-}
-
-@media (min-width: 510px) {
-    .dealer-status {
-        grid-template-columns: 75px 75px 75px 75px 75px 75px;
-        grid-template-rows: 75px;
-    }
+    width: 125px;
+    height: 125px;
+    margin: 0 10px
 }
 
 @media (min-width: 422px) {
@@ -799,6 +790,9 @@ h1 {
 
     .service-list-item.vertical-align {
         display: block;
+    }
+    .dealer-status {
+        margin: 4rem 0 0;
     }
 }
 
