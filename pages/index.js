@@ -1,10 +1,6 @@
 import Head from 'next/head';
-import BackgroundVideo from '../components/BackgroundVideo';
 import Header from '../components/Header';
-import Service from '../components/Service';
-import Projects from '../components/Projects';
-import Products from '../components/Products';
-import Contact from '../components/Contact';
+import Home from './home';
 import '../stylesheets/bootstrap.css';
 import '../stylesheets/styles.css';
 
@@ -48,12 +44,8 @@ class Index extends React.Component {
             rel="stylesheet"
           />
         </Head>
-        <BackgroundVideo />
         <Header />
-        <Service />
-        <Projects />
-        <Products />
-        <Contact />
+        <Home />
       </div>
     );
   }
