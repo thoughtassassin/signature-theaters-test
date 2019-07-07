@@ -11,10 +11,12 @@ const Projects = withRouter (props => {
   return (
    <body className="no-background">
       <div className="products-page">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
-            <h1>{title}</h1>
-            <Gallery items={selectedImages} />
+            <div className="col-xs-12">
+              <h1>{title}</h1>
+              <Gallery items={selectedImages} />
+            </div>  
           </div>
         </div>
       </div>
