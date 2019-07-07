@@ -1,0 +1,32 @@
+body {
+    background: #000;
+}
+
+@keyframes hide {
+    0% {
+        visibility: hidden;
+    }
+    80% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.products-page {
+    background: #000;
+    border: none;
+}
+.products-page h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.image-gallery {
+    visibility: hidden;
+    opacity: 0;
+    animation: hide 0.5s forwards;
+}
