@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import BackgroundVideo from '../components/BackgroundVideo';
+import Intro from '../components/Intro';
 import Header from '../components/Header';
 import Service from '../components/Service';
 import Projects from '../components/Projects';
@@ -49,6 +50,7 @@ class Index extends React.Component {
           />
         </Head>
         <BackgroundVideo />
+        <Intro />
         <Header />
         <Service />
         <Projects />
