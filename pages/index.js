@@ -31,7 +31,7 @@ class Index extends React.Component {
           <link rel="preload" href="https://fonts.gstatic.com" as="script" />
           <link rel="preload" href="https://prod.purechatcdn.com" as="script" />
           <link rel="preload" href="https://app.purechat.com" as="script" />
-          <link rel="preload" href="https://ajax.googleapis.com" as="style" />
+          <link rel="preload" href="https://ajax.googleapis.com" as="script" />
           <link
             rel="preload"
             href="https://www.google-analytics.com"
