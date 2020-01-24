@@ -28,12 +28,16 @@ class Index extends React.Component {
             name="description"
             content="Signature Theaters designs and installs custom home theater and home automation systems. Serving the Permian Basin since 2008."
           />
-          <link rel="preload" href="https://fonts.gstatic.com" />
-          <link rel="preload" href="https://prod.purechatcdn.com" />
-          <link rel="preload" href="https://app.purechat.com" />
-          <link rel="preload" href="https://ajax.googleapis.com" />
-          <link rel="preload" href="https://www.google-analytics.com" />
-          <link rel="preload" href="https://www.gstatic.com" />
+          <link rel="preload" href="https://fonts.gstatic.com" as="script" />
+          <link rel="preload" href="https://prod.purechatcdn.com" as="script" />
+          <link rel="preload" href="https://app.purechat.com" as="script" />
+          <link rel="preload" href="https://ajax.googleapis.com" as="style" />
+          <link
+            rel="preload"
+            href="https://www.google-analytics.com"
+            as="script"
+          />
+          <link rel="preload" href="https://www.gstatic.com" as="script" />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=UA-134677065-1`}
