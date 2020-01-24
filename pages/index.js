@@ -37,7 +37,6 @@ class Index extends React.Component {
             href="https://www.google-analytics.com"
             as="script"
           />
-          <link rel="preload" href="https://www.gstatic.com" as="style" />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=UA-134677065-1`}
