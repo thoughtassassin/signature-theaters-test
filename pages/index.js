@@ -1,11 +1,12 @@
-import Head from 'next/head';
-import Header from '../components/Header';
-import Home from './home';
-import '../stylesheets/bootstrap.css';
-import '../stylesheets/styles.css';
+import React from "react";
+import Head from "next/head";
+import Header from "../components/Header";
+import Home from "./home";
+import "../stylesheets/bootstrap.css";
+import "../stylesheets/styles.css";
 
 class Index extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <Head>
@@ -20,7 +21,8 @@ class Index extends React.Component {
             name="apple-mobile-web-app-status-bar-style"
             content="black-translucent"
           />
-          <meta name="description" 
+          <meta
+            name="description"
             content="Signature Theaters designs and installs custom home theater and home automation systems. Serving the Permian Basin since 2008."
           />
           <script

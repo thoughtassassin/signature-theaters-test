@@ -1,11 +1,12 @@
-import BackgroundVideo from '../components/BackgroundVideo';
-import Service from '../components/Service';
-import Projects from '../components/Projects';
-import Products from '../components/Products';
-import Contact from '../components/Contact';
+import React from "react";
+import BackgroundVideo from "../components/BackgroundVideo";
+import Service from "../components/Service";
+import Projects from "../components/Projects";
+import Products from "../components/Products";
+import Contact from "../components/Contact";
 
 class Home extends React.Component {
-  render () {
+  render() {
     return (
       <React.Fragment>
         <BackgroundVideo />

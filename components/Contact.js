@@ -1,25 +1,27 @@
-import {emailValidation} from '../utils/emailValidation';
+import React from "react";
+import { emailValidation } from "../utils/emailValidation";
+
 const initialState = {
   name: {
-    value: '',
+    value: "",
     validation: null,
-    errorMessage: 'Name is required.',
+    errorMessage: "Name is required.",
     error: false,
-    ref: 'nameRef'
+    ref: "nameRef",
   },
   email: {
-    value: '',
+    value: "",
     validation: emailValidation,
-    errorMessage: 'Email must be a valid email.',
+    errorMessage: "Email must be a valid email.",
     error: false,
-    ref: 'emailRef'
+    ref: "emailRef",
   },
   comment: {
-    value: '',
+    value: "",
     validation: null,
-    errorMessage: 'Comment is required.',
+    errorMessage: "Comment is required.",
     error: false,
-    ref: 'commentRef'
+    ref: "commentRef",
   },
   errors: [],
   messageSent: false,
@@ -32,32 +34,32 @@ class Contact extends React.Component {
   emailRef = React.createRef();
   commentRef = React.createRef();
 
-  handleChange = ({target: {name, value}}) => {
-    const {[name]: element} = this.state;
-    this.setState ({
-      [name]: {...element, value, error: false},
+  handleChange = ({ target: { name, value } }) => {
+    const { [name]: element } = this.state;
+    this.setState({
+      [name]: { ...element, value, error: false },
     });
   };
 
   closeAlert = () => {
-    this.setState({messageSent: false});
-  }
+    this.setState({ messageSent: false });
+  };
 
-  handleSubmit = e => {
-    e.preventDefault ();
+  handleSubmit = (e) => {
+    e.preventDefault();
     let errorCount = 0;
-    this.setState ({errors: []});
+    this.setState({ errors: [] });
     for (const field in this.state) {
-      if (field !== 'errors' && field !== 'messageSent') {
-        const {validation, value, errorMessage, ref} = this.state[field];
-        if (!value || (validation && !validation.test (value))) {
+      if (field !== "errors" && field !== "messageSent") {
+        const { validation, value, errorMessage, ref } = this.state[field];
+        if (!value || (validation && !validation.test(value))) {
           if (errorCount === 0) {
-            console.log(this[ref].current)
+            console.log(this[ref].current);
             this[ref].current.focus();
           }
           errorCount++;
-          this.setState (state => ({
-            [field]: {...state[field], error: true},
+          this.setState((state) => ({
+            [field]: { ...state[field], error: true },
             errors: [...state.errors, errorMessage],
           }));
         }
@@ -65,51 +67,51 @@ class Contact extends React.Component {
     }
     if (errorCount === 0) {
       if (grecaptcha) {
-        grecaptcha.ready (() =>
+        grecaptcha.ready(() =>
           grecaptcha
-            .execute ('6Lcdd4EUAAAAAHBWMAYgcS2KxkXt4_cc_1e6yIDa')
-            .then (token => {
-              fetch ('/validate', {
-                method: 'post',
+            .execute("6Lcdd4EUAAAAAHBWMAYgcS2KxkXt4_cc_1e6yIDa")
+            .then((token) => {
+              fetch("/validate", {
+                method: "post",
                 headers: {
-                  'Content-Type': 'application/json; charset=utf-8',
+                  "Content-Type": "application/json; charset=utf-8",
                 },
-                body: JSON.stringify ({token}),
+                body: JSON.stringify({ token }),
               })
-                .then (response => {
+                .then((response) => {
                   if (response.ok) {
-                    fetch ('/mail', {
-                      method: 'post',
+                    fetch("/mail", {
+                      method: "post",
                       headers: {
-                        'Content-Type': 'application/json; charset=utf-8',
+                        "Content-Type": "application/json; charset=utf-8",
                       },
-                      body: JSON.stringify ({
+                      body: JSON.stringify({
                         name: this.state.name.value,
                         from: this.state.email.value,
                         comment: this.state.comment.value,
                       }),
                     })
-                      .then (reponse => {
+                      .then((reponse) => {
                         if (response.ok) {
-                          return console.log ('Message Sent');
+                          return console.log("Message Sent");
                         } else {
-                          Promise.reject ('Message was not sent.');
+                          Promise.reject("Message was not sent.");
                         }
                       })
-                      .then (() =>
-                        this.setState ({...initialState, messageSent: true})
+                      .then(() =>
+                        this.setState({ ...initialState, messageSent: true })
                       );
                   }
                 })
-                .then (validation => console.log (validation));
+                .then((validation) => console.log(validation));
             })
         );
       }
     }
   };
 
-  render () {
-    const {name, email, comment, messageSent} = this.state;
+  render() {
+    const { name, email, comment, messageSent } = this.state;
     return (
       <section className="contact" id="contact">
         <div className="container">
@@ -125,7 +127,7 @@ class Contact extends React.Component {
             </div>
             <div className="col-xs-12 email">
               <h2>Send An Email</h2>
-              {messageSent &&
+              {messageSent && (
                 <div className="alert alert-success" role="alert">
                   <span className="message">Message sent!</span>
                   <button
@@ -136,10 +138,13 @@ class Contact extends React.Component {
                   >
                     <span aria-hidden="true">&times;</span>
                   </button>
-                </div>}
+                </div>
+              )}
               <form name="contact-form" noValidate onSubmit={this.handleSubmit}>
-                <div className={name.error ? 'form-group error' : 'form-group'}>
-                  <label htmlFor="name" className="control-label">Name</label>
+                <div className={name.error ? "form-group error" : "form-group"}>
+                  <label htmlFor="name" className="control-label">
+                    Name
+                  </label>
                   <input
                     id="name"
                     name="name"
@@ -153,13 +158,16 @@ class Contact extends React.Component {
                     autoComplete="off"
                     ref={this.nameRef}
                   />
-                  {name.error &&
-                    <div className="error-message"> {name.errorMessage}</div>}
+                  {name.error && (
+                    <div className="error-message"> {name.errorMessage}</div>
+                  )}
                 </div>
                 <div
-                  className={email.error ? 'form-group error' : 'form-group'}
+                  className={email.error ? "form-group error" : "form-group"}
                 >
-                  <label htmlFor="email" className="control-label">Email</label>
+                  <label htmlFor="email" className="control-label">
+                    Email
+                  </label>
                   <input
                     id="email"
                     name="email"
@@ -173,11 +181,12 @@ class Contact extends React.Component {
                     required
                     ref={this.emailRef}
                   />
-                  {email.error &&
-                    <div className="error-message"> {email.errorMessage}</div>}
+                  {email.error && (
+                    <div className="error-message"> {email.errorMessage}</div>
+                  )}
                 </div>
                 <div
-                  className={comment.error ? 'form-group error' : 'form-group'}
+                  className={comment.error ? "form-group error" : "form-group"}
                 >
                   <label htmlFor="comment" className="control-label">
                     Comment
@@ -195,15 +204,12 @@ class Contact extends React.Component {
                     rows="7"
                     ref={this.commentRef}
                   />
-                  {comment.error &&
-                    <div className="error-message">
-                      {' '}{comment.errorMessage}
-                    </div>}
+                  {comment.error && (
+                    <div className="error-message"> {comment.errorMessage}</div>
+                  )}
                 </div>
                 <div className="section-button">
-                  <button className="btn btn-default btn-lg">
-                    Send Email
-                  </button>
+                  <button className="btn btn-default btn-lg">Send Email</button>
                 </div>
               </form>
             </div>

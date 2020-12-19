@@ -1,5 +1,7 @@
+import React from "react";
+
 class BackgroundVideo extends React.Component {
-  render () {
+  render() {
     return (
       <div className="fullscreen-bg">
         <video loop muted autoPlay className="fullscreen-bg__video">
